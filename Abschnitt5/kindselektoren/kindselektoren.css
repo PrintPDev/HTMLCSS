@@ -1,0 +1,12 @@
+p > span {
+    color: red;
+}
+
+p > b { 
+    color: aqua;
+
+}
+
+span > b {
+    color: blueviolet;
+}
