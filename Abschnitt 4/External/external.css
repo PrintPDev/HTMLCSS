@@ -1,0 +1,14 @@
+html {
+    background-color: aqua;
+    color: white;
+}
+
+h1 {
+    font-size: 50px;
+    font-weight: bold;
+}
+
+p {
+    font-size: medium;
+    color: brown;
+}
