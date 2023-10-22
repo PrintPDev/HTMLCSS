@@ -1,0 +1,26 @@
+body {
+    height: 10000px;
+}
+
+#fixdiv{
+    width: 200px;
+    height: 200px;
+    background-color: pink;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
+
+#stickydiv {
+    width: 200px;
+    height: 200px;
+    background-color: violet;
+    position: sticky;
+    top:80px;
+    margin-top: 350px;
+}
+
+span {
+    position: static;
+    
+}
