@@ -1,0 +1,55 @@
+    div {
+        width: 600px;
+        height: 600px;
+        border: 2px solid pink;
+        margin-bottom: 20px;
+    }
+
+    #test1 { 
+        background-color: aquamarine;
+    }
+
+    #test2 {
+        background-image: url(hintergrund.png);
+    }
+
+    #test3 {
+        background-image: url(hintergrund.png);
+        background-repeat: repeat-x;
+    }
+
+    #test4 {
+        background-image: url(hintergrund.png);
+        background-repeat: repeat-y;
+    }
+
+    #test5 {
+        background-image: url(hintergrund.png);
+        background-repeat: no-repeat;
+    }
+
+    #test6 {
+        background-image: url(hintergrund.png);
+        background-repeat: no-repeat;
+        background-position: right bottom;
+    }
+
+
+    #test7 {
+        background-image: url(hintergrund.png);
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+    }
+
+    #test8 {
+        background-image: url(hintergrund.png);
+        background-repeat: no-repeat;
+        background-position: right 200px bottom 300px;
+    }
+
+    #test9 {
+        background-image: url(hintergrund.png);
+        background-attachment: fixed;
+    }
+    
+    
