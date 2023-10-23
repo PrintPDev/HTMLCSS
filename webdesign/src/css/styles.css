@@ -7,9 +7,6 @@ Hell Grau: #E5E5E5
 Rot : #A62C21
 */
 
-html {
-    font-size: 16px;
-}
 
 body { 
     margin: 0;
@@ -55,6 +52,7 @@ body {
     display:inline-block;
     height: 100%;
     padding: 0 .2rem 0 0.2rem ;
+    margin-left: 5px;
 }
 
 .header-nav > ul > li > a {
@@ -84,4 +82,10 @@ body {
 
 .active {
     background-color: #A62C21 ;
+}
+
+/** === HEADER-BANNER === */
+.header-banner {
+    width: 100%;
+    height: auto;
 }
