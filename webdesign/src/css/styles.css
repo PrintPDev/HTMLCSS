@@ -30,24 +30,23 @@ body {
     font-size:  1.1rem; 
 }
 
-.header-nav > ul {
+.header-nav  ul {
     margin: 0;
     padding: 0;
-    position: absolute;
-    right:2rem;
+    float: right;
     height: 100%;
 }
 
 
-.header-nav > a > img  {
+.header-nav  a > img  {
      height: 30px;
      width: auto;
-     position: absolute;
-     left: 2rem;
-     top: .5rem;
+     float: left;
+     margin: .55rem;
+    
 }
 
-.header-nav > ul > li {
+.header-nav  ul > li {
 
     display:inline-block;
     height: 100%;
@@ -55,27 +54,28 @@ body {
     margin-left: 5px;
 }
 
-.header-nav > ul > li > a {
+.header-nav  ul > li > a {
     margin-top: .7rem;
     display: inline-block;
 }
 
-.header-nav > ul > li > a:link {
+.header-nav  ul > li > a:link {
     color: white;
     text-decoration: none;
 }
 
-.header-nav > ul > li > a:hover {
+
+.header-nav  ul > li > a:hover {
     color: #E5E5E5;
     text-decoration: none;
 }
 
-.header-nav > ul > li > a:active {
+.header-nav  ul > li > a:active {
     color: #E5E5E5;
     text-decoration: none;
 }
 
-.header-nav > ul > li > a:visited {
+.header-nav  ul > li > a:visited {
     color: white;
     text-decoration: none;
 }
@@ -83,6 +83,24 @@ body {
 .active {
     background-color: #A62C21 ;
 }
+
+
+.header-nav .col-6 {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.header-nav .container,
+.header-nav .row,
+.header-nav .col-6 
+{
+    height: 100%;
+}
+
+
+
+
+
 
 /** === HEADER-BANNER === */
 
@@ -104,6 +122,7 @@ body {
     
 }
 
+
 /*
 
 1920px x 300 px
@@ -114,7 +133,7 @@ body {
 
 */
 
-/* === GRID SYSTEM (Sichtbarkeit) === */
+/* === GRID SYSTEM (Sichtbarkeit) === 
 
 
 .border, .border * {
@@ -126,8 +145,17 @@ body {
     background-color: violet;
 }
 
+p{
+    background-color: pink;
+    padding: 0;
+    margin: 0;
+    color: white;
+    text-align: center;
+}
 
-/* === GRID SYSTEM === */
+*/
+
+/* === GRID SYSTEM === 
 
 .container {
     width: 95%;
@@ -151,3 +179,5 @@ body {
 .col-2 { width: 33.333%;}
 .col-3 { width: 50%;}
 .col-6 {width: 100%;}
+
+*/
