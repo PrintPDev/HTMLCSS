@@ -14,11 +14,33 @@
     <body>
 
         <!-- NAVIGATION -->
+        <nav id="header-nav">
+        <div class="container" id="desktop-nav">
+            <div class="row">
+                <div class="col-6">
+
+                
+                    <a href="index.html">
+                        <img src="src/img/webdesign-logo.png" alt="Das webdesign-logo">
+                    </a>
+                    <ul>
+                        <li class="active"><a href="index.html">Starteseite</a></li>
+                        <li><a href="leistung.html">Leistungen</a></li>
+                        <li><a href="kontakt.html">Kontakt</a></li>
+                        <li><a href="impressum.html">impressum</a></li>
+                    </ul>
+                
+                
+                </div>
+            </div>
+            </div>
+
+        
 
 
-        <nav class="header-nav">
-
-             <div class="container">
+              
+    
+            <div class="container" id="mobile-nav">
                 <div class="row">
                     <div class="col-6">
 
@@ -27,18 +49,21 @@
                             <img src="src/img/webdesign-logo.png" alt="Das webdesign-logo">
                         </a>
 
-                        div.mobile-nav-button
+                        <div class="clearfix" id="mobile-nav-dropdown">
+
+                            <div id="mobile-nav-button"><span>&equiv;</span></div>
+                            
+                            <div id="clearfix" id="mobile-nav-content"> 
                         
-                        
-                        <!--
                         <ul>
                             <li class="active"><a href="index.html">Starteseite</a></li>
                             <li><a href="leistung.html">Leistungen</a></li>
                             <li><a href="kontakt.html">Kontakt</a></li>
                             <li><a href="impressum.html">impressum</a></li>
                         </ul>
-                        -->
-                   
+                        
+                    </div>
+                </div>
                    
                     </div>
                 </div>
@@ -47,12 +72,39 @@
 
          <!--HEADER BANNER-->
 
-        <header class="header-banner"></header>
+        <header id="header-banner"></header>
 
        
+         <!-- NEWSLETTER BEREICH -->
 
+         <section id="newsletter-bereich">
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-4">
+
+                        <p id="nb-werbetext"><span class="wichtiger-text ">Melde dich jetzt an </span>  </p>
+
+                    </div>
+                    <div class="col-2 clearfix">
+
+                       <form id="nb-form" action="index.html" method="post">
+
+                        <label class="screenreader" for="nb-email-input">E-mail: </label>
+                        <input id="nb-email-input" type="text" name="email" placeholder="Deine email">
+
+                        <button class="btn-typ-1" id="nb-btn" type="submit">Jetzt anmelden</button>
+
+                       </form>
+
+                    </div>
+                </div>
+            </div>
+
+         </section>
 
     </body>
 
 </html>
+
 
