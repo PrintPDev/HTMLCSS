@@ -19,6 +19,42 @@ body {
 * {
     box-sizing: border-box;
 }
+
+:focus {
+    outline: none;
+    box-shadow: 0 0 2px 2px #E5E5E5, 0 0 10px #E5E5E5;
+}
+
+section {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+
+@media (max-width: 1366px) {
+   
+    section {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+}
+
+
+@media (max-width: 1366px) {
+   
+    section {
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
+    }
+}
+@media (max-width: 768px) {
+   
+    section {
+            padding-top: .5rem;
+            padding-bottom: .5rem;
+    }
+   
+}
+
 /* === Generel === */
 
 .clearfix::after {
@@ -41,6 +77,72 @@ body {
     color: #E5E5E5;
     padding: .4rem .6rem ;
 }
+
+.btn-typ-1:hover {
+    background-color: #A62C21;
+    border: 2px solid #fff;
+}
+
+.btn-typ-2 {
+    border: 2px solid white;
+    background-color: transparent;
+    color: white;
+    padding: .4rem .6rem;
+}
+
+.btn-typ-2:hover {
+    color:  #A62C21;
+    font-weight: bold;
+    border: 2px solid #A62C21;
+} 
+
+.intro-container {
+    text-align: center;
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 2.5rem;
+}
+
+@media (max-width: 1366px) {
+
+    .intro-container {
+        width: 90%;
+    }
+}
+
+@media (max-width: 1366px) {
+
+    .intro-container {
+        width: 100%;
+    }
+}
+
+.intro-container > h1 {
+    font-size: 1.6rem;
+    text-transform: uppercase;
+}
+
+
+.intro-container > p {
+    font-size: 1.2rem;
+}
+
+@media (max-width: 1366px) {
+
+    .intro-container > p {
+        margin-bottom: .5rem;
+    }
+}
+
+@media (max-width: 1366px) {
+
+    .intro-container > p {
+        margin: 0;
+    }
+}
+
+
 
 /*Navigationsleiste*/
 
@@ -120,6 +222,9 @@ body {
     height: 100%;
 }
 
+.logo-link {
+    display: inline-block;
+}
 
 /* === Navigationsleiste (Mobil) === */
 
@@ -209,6 +314,8 @@ body {
 #newsletter-bereich {
     width: 100%;
     background-color: #3D3F45;
+    padding-bottom: 0;
+    padding-top: 0;
 }
 
 #nb-werbetext {
@@ -276,7 +383,147 @@ body {
     }
 }
 
+/* === LEISTUNG === */
 
+.leistungs-box {
+    background-color: #3D3F45;
+    text-align: center;
+    color: #fff;
+    padding : 1rem 3rem 2.5rem;
+    width: 60%;
+    margin-bottom: 1.6rem;
+}
+
+#leistungen-bereich .row > .col-3:nth-of-type(even) > .leistungs-box{
+margin-right: auto;
+margin-left: 1rem;
+}
+
+#leistungen-bereich .row > .col-3:nth-of-type(odd) > .leistungs-box{
+margin-left: auto;
+margin-right: 1rem;
+}
+
+.leistungs-box > h2 {
+    font-size: 1.4rem;
+}
+
+
+.leistung-ansehen-button{
+    text-decoration: none;
+    height: 40px;
+    display: inline-block;
+    padding-top: .5rem;
+    width: 40%;
+    min-width: 100px;
+    margin-top: 1rem;
+}
+
+
+
+.leistung-ansehen-button:link {
+    color: white;
+    
+}
+
+.leistung-ansehen-button:visited {
+    color: white;
+    
+}
+
+.leistung-ansehen-button:active {
+    color: white;
+    
+}
+
+
+.leistung-ansehen-button:hover {
+    color:  #A62C21;
+    font-weight: bold;
+    border: 2px solid #A62C21;
+}
+
+@media (max-width: 1366px) {
+
+    .leistungs-box {
+        width: 80%;
+    }
+}
+
+@media (max-width: 1024px) {
+
+    .leistungs-box {
+        width: 100%;
+        margin-bottom: .6rem;
+    }
+
+
+    #leistungen-bereich .row > .col-3:nth-of-type(even) > .leistungs-box{
+        margin-left: .5rem;
+        }
+        
+        #leistungen-bereich .row > .col-3:nth-of-type(odd) > .leistungs-box{
+            margin-right: .5rem;
+        }
+}
+
+@media (max-width: 768px) {
+
+   
+
+
+    #leistungen-bereich .row > .col-3:nth-of-type(even) > .leistungs-box{
+        margin-left: 0rem;
+        }
+        
+        #leistungen-bereich .row > .col-3:nth-of-type(odd) > .leistungs-box{
+            margin-right: 0rem;
+        }
+}
+
+/* === Video-Bereich === */
+
+
+#video-bereich {
+    background-color: #3D3F45;
+    color: #fff;
+}
+
+#video-bereich video {
+    width: 35%;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+    display: block;
+}
+
+@media (max-width: 1440px) {
+
+    #video-bereich video {
+        width: 45%;
+    }
+}
+
+@media (max-width: 1024px) {
+
+    #video-bereich video {
+        width: 60%;
+    }
+}
+
+@media (max-width: 768px) {
+
+    #video-bereich video {
+        width: 75%;
+    }
+}
+
+@media (max-width: 480px) {
+
+    #video-bereich video {
+        width: 100%;
+    }
+}
 /*
 
 1920px x 300 px
